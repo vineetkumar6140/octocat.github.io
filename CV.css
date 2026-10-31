@@ -1,0 +1,174 @@
+/* General Styling...... */
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #01142f;
+    color: #e2e8f0;
+    line-height:1.7;
+    padding:20px;
+}
+/*----------- Main portfolio container---------------- */
+footer{
+    margin:auto;
+    max-width: 1000px;
+}
+/* ---------------------header----------------- */
+header{
+    max-width: 1000px;
+    padding: 20px;
+    margin: 0 auto 25px;
+    text-align: center;
+    background:linear-gradient(135deg, #1e293b, #0f172a);
+    border : 1px, solid, #334155;
+    border-radius: 15px;
+}
+header::before{
+    content : "MY PORTFOLIO";
+    font-size: 30px;
+    font-weight:bold;
+    letter-spacing: 5px;
+    color:aqua;
+}
+/* -------------------Profile section----------------- */
+#picture{
+   display:block;
+   width:200px;
+   height:220px;
+   object-fit:cover;
+   border-radius:50%;
+   border:4px solid #38bdf8; 
+   margin: 30px auto 20px;
+   box-shadow: 0 0 25px rgba(56,189,248,0.25);
+   transition: transform 0.3s ease;
+}
+#picture:hover{
+    transform : scale(1.05);
+}
+#center1{
+    display:block;
+    text-align:center;
+}
+#name,
+#name2{
+    font-size: 42px;
+    line-height:1.2;
+    letter-spacing: 4px;
+    font-weight: 800;
+}
+#name{
+    color:#18c8e3;
+}
+#name2{
+    color:#38bdf8;
+    margin-bottom: 25px;
+}
+/* ---------------------horizontal line------------------ */
+hr{
+    border:none;
+    height: 1px;
+    background: linear-gradient(to right,transparent,#38bdf8,transparent);
+    margin:30px 0;
+}
+/* ------------------------Section Cards----------------- */
+main > div,
+footer > div {
+    background: #1e293b;
+    padding: 25px 30px;
+    margin: 22px 0;
+    border: 1px solid #334155;
+    border-radius:14px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition : transform 0.3s ease , border-color 0.3s ease;
+}
+main > div:hover,
+footer > div:hover {
+   transform: Y(-4px);
+   border-color: #38bdf8;
+}
+/* ---------------Section Headings----------------------- */
+h2{
+    color:#38bdf8;
+    font-size:25px;
+    text-align:center;
+    margin-bottom: 20px;
+    padding-bottom:10px;
+    border-bottom: 2px solid #334155;
+}
+h3{
+    color:#f8fafc;
+    font-size:18px;
+    margin : 12px 0 5px;
+}
+p{
+    color:#cbd5e1;
+    margin:10px 0 15px;
+    text-align:justify;
+}
+b,
+strong {
+    color:#f8fafc;
+}
+/* ---------------- Lists-------------------- */
+ul{
+    padding-left: 25px;
+}
+li{
+    padding-left:5px;
+    margin:8px 0;
+    color: #cbd5e1;
+}
+li::marker{
+    color:#38bdf8;
+}
+/* ----------------------Links----------------- */
+a{
+    color:#38bdf8;
+    text-decoration: none;
+    font-weight:600;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color:#7dd3fc;
+    text-decoration: underline;
+}
+/* -------------------------------- Contact Information----------------- */
+footer p {
+    text-align:left;
+    overflow-wrap: anywhere;
+}
+/* --------------------Query Form----------------------- */
+form{
+    max-width:600px;
+    margin:auto;
+}
+form ul{
+    list-style:none;
+    padding:0;
+}
+form li{
+    color:#f8fafc;
+    font-weight: 600;
+    margin-top:15px;
+}
+input{
+    width:100%;
+    padding:12px 14px;
+    margin:5px 0 12px;
+    border: 1px solid #475569;
+    border-radius:8px;
+    background:#0f172a;
+    color:#f8fafc;
+    font-family:inherit;
+    font-size:15px;
+    outline:none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus{
+    border-color:#38bdf8;
+    box-shadow: 0 0 0 3px rgba(56,189,248,0.15);
+}
